@@ -70,7 +70,8 @@ p { margin: 0 0 .3em; }
 
 .personajes { break-before: page; }
 .personajes h1 { font-size: 26pt; color: #7a3b1d; margin: 0 0 4mm; }
-.personajes h2 { font-size: 17pt; color: #7a3b1d; margin: 6mm 0 2mm; }
+.personajes h2 { font-size: 17pt; color: #7a3b1d; margin: 6mm 0 2mm; break-after: avoid; }
+.personajes table { break-inside: avoid; }
 .personajes > p { font-size: 12pt; color: #6b5a48; }
 .personajes table { width: 100%; border-collapse: collapse; font-size: 12pt; line-height: 1.4; }
 .personajes th, .personajes td { text-align: left; vertical-align: top; padding: 2.5mm 3mm; border-bottom: 1px solid #e3d5bf; }
