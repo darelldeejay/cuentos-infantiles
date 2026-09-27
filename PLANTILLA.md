@@ -37,3 +37,8 @@ Si el cuento enseña datos, tienen que ser **ciertos**. Mejor redondear ("más d
 - Formato 3:2 (horizontal). Se guardan en `imagenes/` del cuento como JPG (calidad 88, unos 200 KB cada una), nunca enlazadas a la web del generador.
 - Descripción de personajes: la de `PERSONAJES.md`, siempre igual, para que se reconozcan de un cuento a otro.
 - Primero se genera una imagen con todos los personajes y después se usa como referencia para el resto.
+
+## Al terminar un cuento
+
+1. Añadirlo al índice de `README.md` y a las apariciones de `PERSONAJES.md`.
+2. Regenerar el libro: `python3 herramientas/generar_pdf.py`.
