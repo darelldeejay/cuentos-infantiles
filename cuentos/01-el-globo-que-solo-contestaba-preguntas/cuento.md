@@ -6,7 +6,7 @@
 
 ## 1. Lo que había en el desván
 
-![Olivia, Liliana y Matylda descubren un globo terráqueo que brilla en el desván](https://d8j0ntlcm91z4.cloudfront.net/user_3J2bVsUkiAqkTIUAXvIV96lWv2Q/hf_20260927_150414_f8d9e629-d271-4f94-b5a6-6de26457213a.png)
+![Olivia, Liliana y Matylda descubren un globo terráqueo que brilla en el desván](imagenes/01-desvan.jpg)
 
 Llovía tanto aquel sábado que las gotas parecían tambores en el tejado. Matylda, la mejor amiga de Olivia desde siempre, había venido a pasar la tarde, y las tres —con la pequeña Liliana— subieron al desván.
 
@@ -24,7 +24,7 @@ Olivia hizo girar el globo, puso el dedo encima y el desván desapareció.
 
 ## 2. La selva que respira
 
-![Las tres niñas en una canoa en el río Amazonas, con un delfín rosado saltando](https://d8j0ntlcm91z4.cloudfront.net/user_3J2bVsUkiAqkTIUAXvIV96lWv2Q/hf_20260927_150526_9bdefdb8-62e3-4f67-9ca8-ad56d2968a24.png)
+![Las tres niñas en una canoa en el río Amazonas, con un delfín rosado saltando](imagenes/02-amazonas.jpg)
 
 Hacía un calor húmedo, como estar dentro de una sopa. Estaban en una canoa, en medio de un río anchísimo rodeado de árboles tan altos que tapaban el cielo.
 
@@ -54,7 +54,7 @@ Matylda se echó a reír. Olivia frunció el ceño. ¿Por qué el globo le habla
 
 ## 3. Montañas de piedra en el desierto
 
-![Las niñas delante de las pirámides de Egipto, bajo un sol muy fuerte](https://d8j0ntlcm91z4.cloudfront.net/user_3J2bVsUkiAqkTIUAXvIV96lWv2Q/hf_20260927_150527_d10586a0-052e-46e5-8da3-78284defdd7c.png)
+![Las niñas delante de las pirámides de Egipto, bajo un sol muy fuerte](imagenes/03-egipto.jpg)
 
 Olivia giró el globo deprisa, para que nadie se le adelantara. Aparecieron en un mar de arena dorada. Delante de ellas se levantaban tres montañas perfectas, con forma de triángulo.
 
@@ -74,7 +74,7 @@ Olivia se quedó pensando. Empezaba a sospechar algo.
 
 ## 4. El tren más rápido y la montaña con sombrero
 
-![Las niñas en un andén de Japón viendo pasar un tren bala, con el monte Fuji nevado al fondo](https://d8j0ntlcm91z4.cloudfront.net/user_3J2bVsUkiAqkTIUAXvIV96lWv2Q/hf_20260927_150527_bd05afea-1461-4801-861c-3f687ffca32d.png)
+![Las niñas en un andén de Japón viendo pasar un tren bala, con el monte Fuji nevado al fondo](imagenes/04-japon.jpg)
 
 Esta vez fue Liliana quien giró el globo. Aparecieron en un andén limpísimo. Al fondo se veía una montaña perfecta con la punta blanca, como si llevara un sombrero de nieve. Pasó un tren blanco, de morro alargado, tan rápido que las despeinó.
 
@@ -92,7 +92,7 @@ Las tres niñas se inclinaron hacia el tren, como hacía la gente del andén. Y 
 
 ## 5. El papá que no se movía
 
-![Las niñas con abrigos en la Antártida, mirando a un pingüino emperador que protege un huevo sobre sus patas](https://d8j0ntlcm91z4.cloudfront.net/user_3J2bVsUkiAqkTIUAXvIV96lWv2Q/hf_20260927_150608_4b5d7d52-efef-4dab-9746-319ceb090a4c.png)
+![Las niñas con abrigos en la Antártida, mirando a un pingüino emperador que protege un huevo sobre sus patas](imagenes/05-antartida.jpg)
 
 ¡Brrr! El último giro las llevó a un mundo blanquísimo. Por arte de magia, el globo les puso unos abrigos gordos y mullidos.
 
@@ -110,7 +110,7 @@ Y entonces, lejos, muy lejos, sonó una campana: *¡tolón, tolón!*
 
 ## 6. De vuelta a casa
 
-![Las tres niñas de nuevo en el desván, sonriendo alrededor del globo, con el sol saliendo por la ventana](https://d8j0ntlcm91z4.cloudfront.net/user_3J2bVsUkiAqkTIUAXvIV96lWv2Q/hf_20260927_150527_b1577331-0dd2-40fc-9c8d-5afe2b836f84.png)
+![Las tres niñas de nuevo en el desván, sonriendo alrededor del globo, con el sol saliendo por la ventana](imagenes/06-vuelta.jpg)
 
 —¡La campana! —gritó Matylda—. ¡Hay que volver!
 

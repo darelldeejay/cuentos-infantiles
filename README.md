@@ -15,7 +15,8 @@ Cada cuento se lee en unos 9–11 minutos, está dividido en capítulos cortos c
 ```
 cuentos/
   NN-titulo-del-cuento/
-    cuento.md       texto e ilustraciones
+    cuento.md       texto del cuento
+    imagenes/       ilustraciones (JPG)
 PLANTILLA.md        reglas fijas para escribir cada cuento
 PERSONAJES.md       quién es quién y cómo se dibuja a cada personaje
 ```

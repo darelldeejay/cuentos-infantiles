@@ -34,6 +34,6 @@ Si el cuento enseña datos, tienen que ser **ciertos**. Mejor redondear ("más d
 ## Ilustraciones
 
 - Estilo fijo: ilustración de libro infantil, acuarela y lápiz de color, sin texto dentro de la imagen.
-- Formato 3:2 (horizontal).
+- Formato 3:2 (horizontal). Se guardan en `imagenes/` del cuento como JPG (calidad 88, unos 200 KB cada una), nunca enlazadas a la web del generador.
 - Descripción de personajes: la de `PERSONAJES.md`, siempre igual, para que se reconozcan de un cuento a otro.
 - Primero se genera una imagen con todos los personajes y después se usa como referencia para el resto.
