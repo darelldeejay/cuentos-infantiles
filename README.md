@@ -9,6 +9,7 @@ Cada cuento se lee en unos 9–11 minutos, está dividido en capítulos cortos c
 | # | Título | Tema | Moraleja | Lectura |
 |---|---|---|---|---|
 | 1 | [El globo que solo contestaba preguntas](cuentos/01-el-globo-que-solo-contestaba-preguntas/cuento.md) | El mundo: Amazonas, Egipto, Japón, Antártida | Quien se atreve a preguntar descubre el mundo entero | ~10 min |
+| 2 | [El caso del hámster desaparecido](cuentos/02-el-caso-del-hamster-desaparecido/cuento.md) | Un misterio en el cole | Una sospecha no es una prueba: antes de acusar, busca la verdad | ~10 min |
 
 ## 🖨️ Libro para imprimir
 

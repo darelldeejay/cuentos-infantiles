@@ -14,13 +14,21 @@ El aspecto físico es inventado. Si no se parece a las niñas de verdad, se camb
 | Personaje | Quién es | Cómo se dibuja |
 |---|---|---|
 | **Matylda** | La mejor amiga de Olivia de toda la vida. | Pelo rubio liso por los hombros, diadema azul, sudadera morada, pecas. |
-| **Olaya** | Amiga del cole (primaria, España). | Por definir en su primer cuento. |
-| **Sofía** | Amiga del cole (primaria, España). | Por definir en su primer cuento. |
-| **Janna** | Amiga del cole (primaria, España). | Por definir en su primer cuento. |
-| **Claudia** | Amiga de las clases de música. | Por definir en su primer cuento. |
+| **Olaya** | Amiga del cole. Sabe muchas cosas de animales. | Pelo negro liso en dos trenzas largas, gafas redondas rojas, rebeca amarilla mostaza sobre camisa blanca. |
+| **Sofía** | Amiga del cole. Siempre lleva una libreta para apuntarlo todo. | Pelo castaño corto en media melena con flequillo recto, camiseta de rayas naranjas y blancas. |
+| **Janna** | Amiga del cole. Cariñosa, cuida del hámster de la clase. | Pelo largo oscuro y muy rizado con un gran lazo blanco, vestido turquesa. |
+| **Claudia** | Amiga de las clases de música. Toca el piano y tiene un oído finísimo. | Más alta, pelo castaño claro recogido en un moño, chaqueta rosa. |
+
+## Otros personajes
+
+| Personaje | Quién es | Cómo se dibuja |
+|---|---|---|
+| **Seño Marta** | La profesora de la clase de Olivia. | — |
+| **Garbanzo** | El hámster de la clase. | Hámster sirio dorado y blanco, mofletes gordos. |
 
 ## Apariciones
 
 | Cuento | Personajes |
 |---|---|
 | 01 · El globo que solo contestaba preguntas | Olivia, Liliana, Matylda |
+| 02 · El caso del hámster desaparecido | Olivia, Liliana, Olaya, Sofía, Janna, Claudia |
