@@ -68,14 +68,6 @@ p { margin: 0 0 .3em; }
 .cierre th { background: #f6ecd9; font-family: Fredoka; font-weight: 600; }
 .cierre td:first-child { width: 38%; font-weight: 700; }
 
-.personajes { break-before: page; }
-.personajes h1 { font-size: 26pt; color: #7a3b1d; margin: 0 0 4mm; }
-.personajes h2 { font-size: 17pt; color: #7a3b1d; margin: 6mm 0 2mm; break-after: avoid; }
-.personajes table { break-inside: avoid; }
-.personajes > p { font-size: 12pt; color: #6b5a48; }
-.personajes table { width: 100%; border-collapse: collapse; font-size: 12pt; line-height: 1.4; }
-.personajes th, .personajes td { text-align: left; vertical-align: top; padding: 2.5mm 3mm; border-bottom: 1px solid #e3d5bf; }
-.personajes th { background: #f6ecd9; font-family: Fredoka; font-weight: 600; }
 """
 
 
@@ -137,7 +129,6 @@ def main():
         f"<li><b>{i}. {html.escape(t)}</b><span>{html.escape(tema)}</span></li>"
         for i, (t, tema, _, _) in enumerate(cuentos, 1)
     )
-    personajes = open(os.path.join(RAIZ, "PERSONAJES.md"), encoding="utf-8").read()
 
     documento = f"""<!doctype html><html lang="es"><head><meta charset="utf-8">
 <title>Cuentos para Olivia y Liliana</title><style>{CSS}</style></head><body>
@@ -146,7 +137,6 @@ def main():
 <p>{len(cuentos)} {"cuento ilustrado" if len(cuentos) == 1 else "cuentos ilustrados"}</p></div></section>
 <section class="indice"><h1>Índice</h1><ol>{indice}</ol></section>
 {"".join(c[2] for c in cuentos)}
-<section class="personajes">{md(personajes)}</section>
 </body></html>"""
 
     os.makedirs(os.path.dirname(SALIDA), exist_ok=True)
