@@ -31,6 +31,6 @@ El aspecto físico es inventado. Si no se parece a las niñas de verdad, se camb
 | Cuento | Personajes |
 |---|---|
 | 01 · El globo que solo contestaba preguntas | Olivia, Liliana, Matylda |
-| 02 · El caso del hámster desaparecido | Olivia, Liliana, Olaya, Sofía, Janna, Claudia |
+| 02 · El caso del hámster desaparecido | Olivia, Liliana, Olaya, Sofía, Janna, Claudia, Seño Marta, Garbanzo |
 | 03 · La nota que se escapaba | Olivia, Liliana, Claudia, Sofía |
 | 04 · El cohete de cartón | Olivia, Liliana, Matylda |

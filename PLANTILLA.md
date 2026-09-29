@@ -40,5 +40,5 @@ Si el cuento enseña datos, tienen que ser **ciertos**. Mejor redondear ("más d
 
 ## Al terminar un cuento
 
-1. Añadirlo al índice de `README.md` y a las apariciones de `PERSONAJES.md`.
+1. Añadirlo al índice de `README.md` y a las apariciones de `PERSONAJES.md` (de ahí sale la página «Los personajes de este cuento»).
 2. Regenerar el libro: `python3 herramientas/generar_pdf.py`.
