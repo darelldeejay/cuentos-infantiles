@@ -68,13 +68,13 @@ p { margin: 0 0 .3em; }
 .cierre th { background: #f6ecd9; font-family: Fredoka; font-weight: 600; }
 .cierre td:first-child { width: 38%; font-weight: 700; }
 
-.reparto { break-after: page; }
-.reparto h2 { font-size: 24pt; color: #7a3b1d; margin: 0 0 6mm; }
-.reparto .fichas { display: grid; grid-template-columns: 1fr 1fr; column-gap: 10mm; }
-.reparto .ficha { padding: 4mm 0; border-bottom: 1px dashed #d8c7ad; break-inside: avoid; }
-.reparto .ficha b { font-family: Fredoka; font-weight: 600; font-size: 17pt; color: #7a3b1d; }
-.reparto .ficha p { font-size: 13pt; line-height: 1.45; margin: 1mm 0 0; }
-.reparto .ficha .aspecto { color: #6b5a48; }
+.personajes { break-before: page; }
+.personajes h1 { font-size: 26pt; color: #7a3b1d; margin: 0 0 4mm; }
+.personajes h2 { font-size: 17pt; color: #7a3b1d; margin: 6mm 0 2mm; break-after: avoid; }
+.personajes table { width: 100%; border-collapse: collapse; font-size: 12pt; line-height: 1.4; break-inside: avoid; }
+.personajes th, .personajes td { text-align: left; vertical-align: top; padding: 2.5mm 3mm; border-bottom: 1px solid #e3d5bf; }
+.personajes th { background: #f6ecd9; font-family: Fredoka; font-weight: 600; }
+.personajes td:first-child { width: 22%; font-weight: 700; }
 """
 
 
@@ -83,26 +83,43 @@ def md(texto):
 
 
 def leer_personajes():
-    """Devuelve ({nombre: (quién es, cómo es)}, {número de cuento: [nombres]}) desde PERSONAJES.md."""
+    """Lee PERSONAJES.md.
+
+    Devuelve ({nombre: (grupo, quién es, cómo es)}, {número de cuento: [nombres]}).
+    El grupo es el título de la sección donde está el personaje (Protagonistas, Amigas u Otros personajes).
+    """
     texto = open(os.path.join(RAIZ, "PERSONAJES.md"), encoding="utf-8").read()
     fichas = {}
-    for nombre, quien, como in re.findall(r"^\| \*\*(.+?)\*\* \| (.+?) \| (.+?) \|$", texto, re.M):
-        fichas[nombre] = (quien, "" if como.strip() in ("—", "-") else como)
+    for grupo, cuerpo in re.findall(r"^## (.+?)\n(.*?)(?=^## |\Z)", texto, re.M | re.S):
+        for nombre, quien, como in re.findall(r"^\| \*\*(.+?)\*\* \| (.+?) \| (.+?) \|$", cuerpo, re.M):
+            fichas[nombre] = (grupo.strip(), quien, "" if como.strip() in ("—", "-") else como)
     apariciones = {}
     for num, nombres in re.findall(r"^\| (\d+) · .+? \| (.+?) \|$", texto, re.M):
         apariciones[int(num)] = [n.strip() for n in nombres.split(",")]
     return fichas, apariciones
 
 
-def reparto_html(nombres, fichas):
-    filas = []
+def personajes_html(nombres, fichas):
+    """Páginas «Personajes» y «Otros personajes» del final de un cuento, solo con los que salen en él."""
+    grupos = {}
     for nombre in nombres:
         if nombre not in fichas:
             sys.exit(f"PERSONAJES.md: «{nombre}» sale en Apariciones pero no tiene ficha")
-        quien, como = fichas[nombre]
-        aspecto = f'<p class="aspecto">{html.escape(como)}</p>' if como else ""
-        filas.append(f'<div class="ficha"><b>{html.escape(nombre)}</b><p>{html.escape(quien)}</p>{aspecto}</div>')
-    return f'<section class="reparto"><h2>Los personajes de este cuento</h2><div class="fichas">{"".join(filas)}</div></section>'
+        grupo, quien, como = fichas[nombre]
+        grupos.setdefault(grupo, []).append((nombre, quien, como))
+
+    def tabla(filas):
+        cuerpo = "".join(f"<tr><td>{html.escape(n)}</td><td>{html.escape(q)}</td><td>{html.escape(c) or '—'}</td></tr>"
+                         for n, q, c in filas)
+        return f"<table><tr><th>Personaje</th><th>Quién es</th><th>Cómo es</th></tr>{cuerpo}</table>"
+
+    partes = ["<h1>Personajes</h1>"]
+    for grupo, filas in grupos.items():
+        if grupo != "Otros personajes":
+            partes.append(f"<h2>{html.escape(grupo)}</h2>{tabla(filas)}")
+    if "Otros personajes" in grupos:
+        partes.append(f"<h2>Otros personajes</h2>{tabla(grupos['Otros personajes'])}")
+    return f'<section class="personajes">{"".join(partes)}</section>'
 
 
 def cuento_a_html(num, ruta, fichas, apariciones):
@@ -125,13 +142,13 @@ def cuento_a_html(num, ruta, fichas, apariciones):
         f'<section class="cuento-titulo"><div class="num">CUENTO {num}</div>'
         f"<h1>{html.escape(titulo)}</h1><div class=\"meta\">{html.escape(meta)}</div></section>"
     ]
-    if num in apariciones:
-        partes.append(reparto_html(apariciones[num], fichas))
     for cap in capitulos:
         # Capítulo largo: imagen más baja para que quepa en una sola página.
         clase = "capitulo largo" if len(cap.split()) > 180 else "capitulo"
         partes.append(f'<section class="{clase}">{md(cap)}</section>')
     partes.append(f'<section class="cierre">{md(cierre_txt)}</section>')
+    if num in apariciones:
+        partes.append(personajes_html(apariciones[num], fichas))
 
     tema = re.search(r"🌍 Tema: ([^·\n]+)", meta)
     return titulo, (tema.group(1).strip() if tema else ""), "\n".join(partes), f"{carpeta}/imagenes"

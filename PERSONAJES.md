@@ -25,12 +25,13 @@ El aspecto físico es inventado. Si no se parece a las niñas de verdad, se camb
 |---|---|---|
 | **Seño Marta** | La profesora de la clase de Olivia. | — |
 | **Garbanzo** | El hámster de la clase. | Hámster sirio dorado y blanco, mofletes gordos. |
+| **El globo mágico** | Un globo terráqueo antiguo del desván. Solo contesta a quien le hace preguntas. | Globo terráqueo de madera y latón que brilla con luz dorada. |
 
 ## Apariciones
 
 | Cuento | Personajes |
 |---|---|
-| 01 · El globo que solo contestaba preguntas | Olivia, Liliana, Matylda |
+| 01 · El globo que solo contestaba preguntas | Olivia, Liliana, Matylda, El globo mágico |
 | 02 · El caso del hámster desaparecido | Olivia, Liliana, Olaya, Sofía, Janna, Claudia, Seño Marta, Garbanzo |
-| 03 · La nota que se escapaba | Olivia, Liliana, Claudia, Sofía |
+| 03 · La nota que se escapaba | Olivia, Liliana, Claudia, Sofía, Seño Marta |
 | 04 · El cohete de cartón | Olivia, Liliana, Matylda |
