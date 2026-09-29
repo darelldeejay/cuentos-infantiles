@@ -2,6 +2,7 @@
 
 - nivel: 1
 - letras: A E I O U M P L S
+- pendiente: rehacer las ilustraciones sin la marca de agua de OpenArt (plan gratuito). En la última, Peluso sale como osito en vez de conejo.
 
 ## Letras
 
