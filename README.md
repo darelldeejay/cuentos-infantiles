@@ -33,7 +33,7 @@ python3 herramientas/generar_pdf_lectura.py
 
 ## 🖨️ Libro para imprimir
 
-Todos los cuentos juntos, con portada, índice y un capítulo por página (A4): [`libro/cuentos-olivia-y-liliana.pdf`](libro/cuentos-olivia-y-liliana.pdf). La ficha de personajes no va en el libro; está en `PERSONAJES.md`.
+Todos los cuentos juntos, con portada, índice y un capítulo por página (A4): [`libro/cuentos-olivia-y-liliana.pdf`](libro/cuentos-olivia-y-liliana.pdf).
 
 Para regenerarlo después de añadir un cuento:
 
