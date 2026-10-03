@@ -6,9 +6,8 @@ Olivia, 7 años. Lee sola. Se aburre con páginas llenas de letra.
 
 ## Extensión
 
-- **Tiempo de lectura: 9–11 minutos.**
-- A los 7 años se leen unas 70–90 palabras por minuto, así que el texto del cuento (sin contar la moraleja ni el recuadro final) debe tener **entre 700 y 850 palabras**.
-- Si Olivia tarda mucho más o mucho menos, se ajusta esta cifra.
+- **Desde el cuento 05: unas 1.400–1.600 palabras** (entre 15 y 18 minutos de lectura). Con los primeros cuentos, de unas 750 palabras, Olivia terminaba demasiado rápido.
+- Los capítulos de más de 200 palabras se maquetan con letra más pequeña, para que en cada página entre más texto (no para que haya más páginas).
 
 ## Tono
 
@@ -20,7 +19,7 @@ Olivia, 7 años. Lee sola. Se aburre con páginas llenas de letra.
 ## Estructura
 
 1. Cabecera con tiempo de lectura, tema y protagonistas.
-2. **5–6 capítulos cortos** (120–180 palabras), cada uno con **una ilustración**.
+2. **6 capítulos** de 230–300 palabras, cada uno con **una ilustración** y en una sola página.
 3. El problema o el defecto del personaje se ve en la historia; la moraleja no se dice antes de tiempo.
 4. **Moraleja** en un recuadro al final: una frase clara y una segunda que la explica.
 5. Cierre opcional: lo aprendido, una pregunta para hablar después de leer.
@@ -41,4 +40,5 @@ Si el cuento enseña datos, tienen que ser **ciertos**. Mejor redondear ("más d
 ## Al terminar un cuento
 
 1. Añadirlo al índice de `README.md` y a las apariciones de `PERSONAJES.md` (de ahí salen las páginas «Personajes» y «Otros personajes» del final de cada cuento).
-2. Regenerar el libro: `python3 herramientas/generar_pdf.py`.
+2. Regenerar el libro completo: `python3 herramientas/generar_pdf.py`.
+3. Para imprimir, sacar **solo los cuentos nuevos**: `python3 herramientas/generar_pdf.py 5 6`. Ese PDF empieza con el índice completo (los nuevos marcados con ★) y no lleva portada.

@@ -2,7 +2,7 @@
 
 Cuentos ilustrados escritos para que los lea Olivia (7 años), protagonizados por ella, su hermana Liliana (5 años) y sus amigas.
 
-Cada cuento se lee en unos 9–11 minutos, está dividido en capítulos cortos con una ilustración cada uno y termina con una moraleja.
+Los cuentos 1 a 4 se leen en unos 9–11 minutos y, desde el 5, en unos 15–18. Cada cuento está dividido en capítulos cortos con una ilustración cada uno y termina con una moraleja.
 
 ## Cuentos
 
@@ -12,6 +12,8 @@ Cada cuento se lee en unos 9–11 minutos, está dividido en capítulos cortos c
 | 2 | [El caso del hámster desaparecido](cuentos/02-el-caso-del-hamster-desaparecido/cuento.md) | Un misterio en el cole | Una sospecha no es una prueba: antes de acusar, busca la verdad | ~10 min |
 | 3 | [La nota que se escapaba](cuentos/03-la-nota-que-se-escapaba/cuento.md) | La música | Equivocarse no es fracasar; rendirse sin intentarlo, sí | ~10 min |
 | 4 | [El cohete de cartón](cuentos/04-el-cohete-de-carton/cuento.md) | El espacio | Nadie es demasiado pequeño para ayudar | ~9 min |
+| 5 | [Lo que guardaba la poza](cuentos/05-lo-que-guardaba-la-poza/cuento.md) | El mar y sus animales | La naturaleza no es una tienda de recuerdos: mira, aprende y déjala como estaba | ~15 min |
+| 6 | [El girasol de las dos](cuentos/06-el-girasol-de-las-dos/cuento.md) | Las plantas y decir la verdad | Decir la verdad cuesta un momento; callarla pesa todos los días | ~15 min |
 
 ## 🔤 Aprendo a leer (para Liliana)
 
@@ -40,6 +42,12 @@ Para regenerarlo después de añadir un cuento:
 ```
 pip install markdown
 python3 herramientas/generar_pdf.py
+```
+
+Para imprimir solo los cuentos nuevos (empieza con el índice completo, sin portada):
+
+```
+python3 herramientas/generar_pdf.py 5 6      # crea libro/cuentos-05-06.pdf
 ```
 
 Necesita Chromium o Google Chrome instalado.
