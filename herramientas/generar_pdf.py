@@ -3,7 +3,10 @@
 
 Uso:
     pip install markdown
-    python3 herramientas/generar_pdf.py
+    python3 herramientas/generar_pdf.py          # libro completo, con portada
+    python3 herramientas/generar_pdf.py 5 6      # solo los cuentos 5 y 6, para imprimir:
+                                                 # índice completo + esos cuentos
+                                                 # (libro/cuentos-05-06.pdf)
 
 Necesita Chromium o Google Chrome. Si no lo encuentra, indica la ruta con CHROME=/ruta/al/navegador.
 """
@@ -27,7 +30,7 @@ CSS = """
 @font-face { font-family: Fredoka; font-weight: 600; src: url(herramientas/fuentes/Fredoka-SemiBold.woff2); }
 
 @page { size: A4; margin: 16mm 18mm 18mm; }
-@page :first { margin: 0; @bottom-center { content: none; } }
+@page portada { margin: 0; @bottom-center { content: none; } }
 @page { @bottom-center { content: counter(page); font-family: Andika; font-size: 11pt; color: #8a7a66; } }
 
 * { box-sizing: border-box; }
@@ -36,7 +39,7 @@ body { margin: 0; font-family: Andika, sans-serif; font-size: 15pt; line-height:
 h1, h2, h3 { font-family: Fredoka, Andika, sans-serif; font-weight: 600; line-height: 1.15; }
 p { margin: 0 0 .3em; }
 
-.portada { height: 297mm; display: flex; flex-direction: column; background: #f6ecd9; break-after: page; }
+.portada { page: portada; height: 297mm; display: flex; flex-direction: column; background: #f6ecd9; break-after: page; }
 .portada img { width: 100%; height: 175mm; object-fit: cover; display: block; }
 .portada .textos { flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 20mm; }
 .portada h1 { font-size: 38pt; margin: 0 0 6mm; color: #7a3b1d; }
@@ -57,6 +60,10 @@ p { margin: 0 0 .3em; }
 .capitulo { break-before: page; }
 .capitulo img { width: 100%; height: 86mm; object-fit: cover; border-radius: 4mm; display: block; margin-bottom: 4mm; }
 .capitulo.largo img { height: 64mm; }
+.capitulo.extenso { font-size: 12pt; line-height: 1.38; }
+.capitulo.extenso img { width: auto; height: 84mm; max-width: 100%; object-fit: contain; margin: 0 auto 4mm; }
+.capitulo.extenso p { margin: 0 0 .28em; }
+.indice li i { font-style: normal; font-size: 11pt; color: #b0703f; margin-left: 3mm; }
 .capitulo h2 { font-size: 21pt; color: #7a3b1d; margin: 0 0 3mm; }
 
 .cierre { break-before: page; }
@@ -144,7 +151,9 @@ def cuento_a_html(num, ruta, fichas, apariciones):
     ]
     for cap in capitulos:
         # Capítulo largo: imagen más baja para que quepa en una sola página.
-        clase = "capitulo largo" if len(cap.split()) > 180 else "capitulo"
+        # Capítulo extenso (cuentos desde el 05): letra más pequeña para que entre más texto por página.
+        palabras = len(cap.split())
+        clase = "capitulo extenso" if palabras > 200 else "capitulo largo" if palabras > 180 else "capitulo"
         partes.append(f'<section class="{clase}">{md(cap)}</section>')
     partes.append(f'<section class="cierre">{md(cierre_txt)}</section>')
     if num in apariciones:
@@ -171,37 +180,51 @@ def main():
     if not rutas:
         sys.exit("No hay cuentos en cuentos/*/cuento.md")
 
-    fichas, apariciones = leer_personajes()
-    cuentos = [cuento_a_html(int(os.path.basename(os.path.dirname(r))[:2]), r, fichas, apariciones) for r in rutas]
-    portada = sorted(glob.glob(os.path.join(RAIZ, cuentos[0][3], "*.jpg")))[0]
+    numero = lambda r: int(os.path.basename(os.path.dirname(r))[:2])  # noqa: E731
+    elegidos = {int(a) for a in sys.argv[1:]}
+    if elegidos - {numero(r) for r in rutas}:
+        sys.exit(f"No existen los cuentos: {sorted(elegidos - {numero(r) for r in rutas})}")
 
+    fichas, apariciones = leer_personajes()
+    cuentos = [(numero(r), *cuento_a_html(numero(r), r, fichas, apariciones)) for r in rutas]
+
+    # El índice siempre lista todos los cuentos; los que van en este PDF se marcan como nuevos.
     indice = "".join(
-        f"<li><b>{i}. {html.escape(t)}</b><span>{html.escape(tema)}</span></li>"
-        for i, (t, tema, _, _) in enumerate(cuentos, 1)
+        f"<li><b>{n}. {html.escape(t)}</b>{'<i>★ nuevo</i>' if n in elegidos else ''}<span>{html.escape(tema)}</span></li>"
+        for n, t, tema, _, _ in cuentos
     )
+    if elegidos:
+        salida = os.path.join(RAIZ, "libro", "cuentos-" + "-".join(f"{n:02d}" for n in sorted(elegidos)) + ".pdf")
+        cabecera = ""
+        incluidos = [c for c in cuentos if c[0] in elegidos]
+    else:
+        salida = SALIDA
+        portada = sorted(glob.glob(os.path.join(RAIZ, cuentos[0][4], "*.jpg")))[0]
+        cabecera = (f'<section class="portada"><img src="{os.path.relpath(portada, RAIZ)}">'
+                    f'<div class="textos"><h1>Cuentos para Olivia y Liliana</h1>'
+                    f'<p>{len(cuentos)} {"cuento ilustrado" if len(cuentos) == 1 else "cuentos ilustrados"}</p></div></section>')
+        incluidos = cuentos
 
     documento = f"""<!doctype html><html lang="es"><head><meta charset="utf-8">
 <title>Cuentos para Olivia y Liliana</title><style>{CSS}</style></head><body>
-<section class="portada"><img src="{os.path.relpath(portada, RAIZ)}">
-<div class="textos"><h1>Cuentos para Olivia y Liliana</h1>
-<p>{len(cuentos)} {"cuento ilustrado" if len(cuentos) == 1 else "cuentos ilustrados"}</p></div></section>
+{cabecera}
 <section class="indice"><h1>Índice</h1><ol>{indice}</ol></section>
-{"".join(c[2] for c in cuentos)}
+{"".join(c[3] for c in incluidos)}
 </body></html>"""
 
-    os.makedirs(os.path.dirname(SALIDA), exist_ok=True)
+    os.makedirs(os.path.dirname(salida), exist_ok=True)
     with tempfile.NamedTemporaryFile("w", suffix=".html", dir=RAIZ, delete=False, encoding="utf-8") as f:
         f.write(documento)
         temporal = f.name
     try:
         subprocess.run(
             [buscar_chrome(), "--headless", "--no-sandbox", "--disable-gpu", "--no-pdf-header-footer",
-             f"--print-to-pdf={SALIDA}", "file://" + temporal],
+             f"--print-to-pdf={salida}", "file://" + temporal],
             check=True, capture_output=True,
         )
     finally:
         os.remove(temporal)
-    print(f"PDF generado: {os.path.relpath(SALIDA, RAIZ)} ({len(cuentos)} cuentos)")
+    print(f"PDF generado: {os.path.relpath(salida, RAIZ)} ({len(incluidos)} cuentos)")
 
 
 if __name__ == "__main__":
