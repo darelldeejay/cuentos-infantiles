@@ -60,8 +60,8 @@ p { margin: 0 0 .3em; }
 .capitulo { break-before: page; }
 .capitulo img { width: 100%; height: 86mm; object-fit: cover; border-radius: 4mm; display: block; margin-bottom: 4mm; }
 .capitulo.largo img { height: 64mm; }
-.capitulo.extenso { font-size: 12.5pt; line-height: 1.42; }
-.capitulo.extenso img { height: 78mm; }
+.capitulo.extenso { font-size: 12pt; line-height: 1.38; }
+.capitulo.extenso img { width: auto; height: 84mm; max-width: 100%; object-fit: contain; margin: 0 auto 4mm; }
 .capitulo.extenso p { margin: 0 0 .28em; }
 .indice li i { font-style: normal; font-size: 11pt; color: #b0703f; margin-left: 3mm; }
 .capitulo h2 { font-size: 21pt; color: #7a3b1d; margin: 0 0 3mm; }
