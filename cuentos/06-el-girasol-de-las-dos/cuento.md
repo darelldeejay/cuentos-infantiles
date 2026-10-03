@@ -1,6 +1,6 @@
 # El girasol de las dos
 
-> ⏱️ Lectura: unos 15 minutos · 🌍 Tema: las plantas y decir la verdad · 👧 Protagonistas: Olivia, Lucía, Sofía V, Sofía B, Jana, Olaya y Liliana
+> ⏱️ Lectura: unos 15 minutos · 🌍 Tema: las plantas y decir la verdad · 👧 Protagonistas: Olivia, Lucía, Sofía B, Sofía V, Jana, Olaya y Liliana
 
 ---
 
@@ -14,15 +14,15 @@ El lunes, la seño Marta entró en clase con una caja de cartón llena de maceta
 
 Toda la clase se puso a hablar a la vez. La seño fue repartiendo las macetas, un puñado de tierra y una semilla a rayas blancas y negras para cada uno.
 
-—¡Pero si es una pipa! —dijo Sofía B, y le dio la vuelta como si buscara la trampa.
+—¡Pero si es una pipa! —dijo Sofía V, y le dio la vuelta como si buscara la trampa.
 
 —Es que las pipas son las semillas del girasol —explicó Olaya, colocándose las gafas rojas—. Las que comemos están tostadas y ya no pueden crecer. Esta está cruda, y dentro tiene una planta entera dormida, esperando.
 
-En la clase había dos Sofías. Para no liarse, todo el mundo las llamaba por la inicial de su apellido: Sofía V, la del pelo un poco rizado y la libreta siempre en la mano, y Sofía B, la de la coleta negrísima y las bromas.
+En la clase había dos Sofías. Para no liarse, todo el mundo las llamaba con una letra detrás: Sofía B, la de la coleta negrísima y la libreta siempre en la mano, y Sofía V, la del pelo un poco rizado y las bromas.
 
-—Pues yo voy a ponerle nombre a mi semilla —dijo Sofía B—. Se va a llamar Pipa Grande.
+—Pues yo voy a ponerle nombre a mi semilla —dijo Sofía V—. Se va a llamar Pipa Grande.
 
-—Y la mía, Pipa Pequeña —dijo Sofía V, y lo apuntó en la libreta.
+—Y la mía, Pipa Pequeña —dijo Sofía B, y lo apuntó en la libreta.
 
 Olivia puso su maceta en la ventana, justo al lado de la de Lucía. Lucía era la más cuidadosa de la clase. Apretaba la tierra con la punta de los dedos, sin prisas, como si estuviera arropando a un bebé.
 
@@ -44,7 +44,7 @@ El viernes, Lucía llegó corriendo a la ventana y soltó un gritito. En su mace
 
 —¡Ha salido!
 
-Toda la clase se acercó a mirarlo. La seño Marta dijo que era el primer brote del curso y Sofía V lo apuntó en su libreta con fecha y todo. Jana le hizo un dibujo. Sofía B propuso hacerle una fiesta.
+Toda la clase se acercó a mirarlo. La seño Marta dijo que era el primer brote del curso y Sofía B lo apuntó en su libreta con fecha y todo. Jana le hizo un dibujo. Sofía V propuso hacerle una fiesta.
 
 Olivia miró su maceta. Tierra. Ni un gancho, ni un puntito verde, nada.
 
@@ -82,7 +82,7 @@ El lunes, Lucía fue directa a la ventana. Olivia vio desde su mesa cómo se le 
 
 —Mi girasol… —dijo bajito—. Está roto.
 
-Todas se acercaron. Sofía V dijo que a lo mejor había sido el viento. Sofía B dijo que a lo mejor había sido un fantasma vegetariano, pero nadie se rio. Jana le pasó a Lucía un pañuelo. Lucía no lloraba, pero tenía los ojos brillantes y no dejaba de mirar el tallo partido.
+Todas se acercaron. Sofía B dijo que a lo mejor había sido el viento. Sofía V dijo que a lo mejor había sido un fantasma vegetariano, pero nadie se rio. Jana le pasó a Lucía un pañuelo. Lucía no lloraba, pero tenía los ojos brillantes y no dejaba de mirar el tallo partido.
 
 —No pasa nada —dijo al final, muy bajito—. Total, yo ya no planto más.
 
@@ -148,7 +148,7 @@ Durante semanas regaron el girasol de las dos cada mañana. Le daban la vuelta a
 
 En primavera lo plantaron en el huerto del patio, junto a Pipa Grande y Pipa Pequeña, que al final también habían salido.
 
-El girasol de las dos creció y creció. Primero les llegó a la rodilla, luego a la nariz y un día, a principios de junio, Sofía V lo midió con una cinta métrica y apuntó en su libreta, muy seria:
+El girasol de las dos creció y creció. Primero les llegó a la rodilla, luego a la nariz y un día, a principios de junio, Sofía B lo midió con una cinta métrica y apuntó en su libreta, muy seria:
 
 —Más alto que la seño Marta.
 
@@ -158,7 +158,7 @@ La flor era enorme, amarilla por fuera y marrón por dentro. Olaya les contó qu
 
 —Y cientos de pipas para Garbanzo —añadió Jana.
 
-Sofía B propuso hacerle una fiesta. Esta vez, todas dijeron que sí.
+Sofía V propuso hacerle una fiesta. Esta vez, todas dijeron que sí.
 
 Al final de curso, cuando recogieron las pipas, Lucía le dio la mitad a Olivia en una bolsita de papel.
 

@@ -1,12 +1,12 @@
 # El caso del hámster desaparecido
 
-> ⏱️ Lectura: unos 10 minutos · 🌍 Tema: un misterio en el cole · 👧 Protagonistas: Olivia, Olaya, Sofía, Janna, Claudia y Liliana
+> ⏱️ Lectura: unos 10 minutos · 🌍 Tema: un misterio en el cole · 👧 Protagonistas: Olivia, Olaya, Sofía, Jana, Claudia y Liliana
 
 ---
 
 ## 1. La jaula vacía
 
-![Olivia, Olaya, Sofía y Janna miran la jaula vacía del hámster en clase](imagenes/01-jaula-vacia.jpg)
+![Olivia, Olaya, Sofía y Jana miran la jaula vacía del hámster en clase](imagenes/01-jaula-vacia.jpg)
 
 El lunes por la mañana, la clase de segundo estaba patas arriba. La jaula de Garbanzo, el hámster de la clase, estaba vacía. La puertecita estaba entreabierta y en la estantería solo quedaban unas cuantas cáscaras de pipa.
 
@@ -18,17 +18,17 @@ La seño Marta pidió calma, pero Olivia ya había sacado de su mochila una lupa
 
 Sofía abrió su libreta por una página en blanco y escribió con letra grande: *EL CASO DEL HÁMSTER DESAPARECIDO.*
 
-Janna no dijo nada. Se había quedado muy quieta, con las manos en las mejillas.
+Jana no dijo nada. Se había quedado muy quieta, con las manos en las mejillas.
 
 ## 2. La primera sospechosa
 
-![Las niñas en corrillo mientras Janna, apartada, parece triste](imagenes/02-sospechosa.jpg)
+![Las niñas en corrillo mientras Jana, apartada, parece triste](imagenes/02-sospechosa.jpg)
 
 —Primera pregunta —dijo Olivia, como los detectives de las películas—. ¿Quién le dio de comer el viernes?
 
-Todas se giraron hacia Janna. Esa semana le tocaba a ella cuidar de Garbanzo.
+Todas se giraron hacia Jana. Esa semana le tocaba a ella cuidar de Garbanzo.
 
-—Yo… yo cerré la puerta —dijo Janna bajito—. Estoy segura.
+—Yo… yo cerré la puerta —dijo Jana bajito—. Estoy segura.
 
 Sofía entornó los ojos.
 
@@ -38,7 +38,7 @@ Sofía entornó los ojos.
 
 Y en la libreta de Sofía apareció una palabra que dolía solo de leerla: *SOSPECHOSA: JANNA.*
 
-A Janna le temblaron los labios. No lloró delante de todas, pero cuando sonó el timbre del recreo salió la primera y se sentó sola en un banco del patio.
+A Jana le temblaron los labios. No lloró delante de todas, pero cuando sonó el timbre del recreo salió la primera y se sentó sola en un banco del patio.
 
 ## 3. Una pista muy pequeña
 
@@ -56,9 +56,9 @@ Liliana frunció el ceño.
 
 —¿Quién?
 
-—Janna.
+—Jana.
 
-Liliana miró hacia el banco donde Janna estaba sola, con la cabeza agachada. Luego miró a su hermana.
+Liliana miró hacia el banco donde Jana estaba sola, con la cabeza agachada. Luego miró a su hermana.
 
 —¿La has visto tú llevárselo? —preguntó.
 
@@ -66,7 +66,7 @@ Liliana miró hacia el banco donde Janna estaba sola, con la cabeza agachada. Lu
 
 —Entonces no lo sabes —dijo Liliana.
 
-Y se fue a sentarse con Janna.
+Y se fue a sentarse con Jana.
 
 Olivia se quedó con la lupa en la mano y una sensación rara en la tripa. Su hermana pequeña tenía razón. No tenían ninguna prueba. Solo una sospecha.
 
@@ -102,25 +102,25 @@ La seño Marta miró la jaula de cerca y encontró la verdadera respuesta. El pe
 
 —Nadie tiene la culpa —dijo la seño—. Solo un tornillo.
 
-Olivia sintió que se le ponían las orejas rojas. Janna había dicho la verdad desde el principio.
+Olivia sintió que se le ponían las orejas rojas. Jana había dicho la verdad desde el principio.
 
 ## 6. Lo que no estaba en la libreta
 
-![Olivia pide perdón a Janna y todas juntas arreglan la jaula de Garbanzo](imagenes/06-perdon.jpg)
+![Olivia pide perdón a Jana y todas juntas arreglan la jaula de Garbanzo](imagenes/06-perdon.jpg)
 
-Olivia fue hasta Janna, que tenía a Liliana todavía cogida de la mano.
+Olivia fue hasta Jana, que tenía a Liliana todavía cogida de la mano.
 
-—Janna, perdona —dijo—. Te acusamos sin pruebas. Eso no se hace. Nos equivocamos.
+—Jana, perdona —dijo—. Te acusamos sin pruebas. Eso no se hace. Nos equivocamos.
 
 Sofía arrancó la página de la libreta, la arrugó y la tiró a la papelera.
 
 —Yo también lo siento —dijo.
 
-Janna se quedó pensando un momento. Luego sonrió, y fue como si saliera el sol.
+Jana se quedó pensando un momento. Luego sonrió, y fue como si saliera el sol.
 
 —Vale. Pero la próxima vez, preguntadme primero.
 
-Entre todas apretaron el tornillo del pestillo y le prepararon a Garbanzo una caja de cartón con papelitos, para que tuviera un escondite dentro de la jaula. Janna le puso nombre: *Villa Garbanzo*.
+Entre todas apretaron el tornillo del pestillo y le prepararon a Garbanzo una caja de cartón con papelitos, para que tuviera un escondite dentro de la jaula. Jana le puso nombre: *Villa Garbanzo*.
 
 —Oye, Lili —dijo Olivia en el camino a casa—. Hoy la mejor detective has sido tú.
 
