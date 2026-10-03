@@ -28,7 +28,7 @@ Los cuentos 01 a 04 se ilustraron antes de tener estas descripciones, así que e
 
 | Personaje | Quién es | Cómo se dibuja |
 |---|---|---|
-| **Seño Marta** | La profesora de la clase de Olivia. | — |
+| **Seño Marta** | La profesora de la clase de Olivia. | Mujer joven y simpática, pelo castaño recogido en un moño bajo, rebeca verde oliva y pantalón beis. |
 | **Garbanzo** | El hámster de la clase. | Hámster sirio dorado y blanco, mofletes gordos. |
 | **El globo mágico** | Un globo terráqueo antiguo del desván. Solo contesta a quien le hace preguntas. | Globo terráqueo de madera y latón que brilla con luz dorada. |
 | **Peluso** | El conejo de peluche de Liliana. Va con ella a todas partes. | Conejo de peluche beis con orejas largas. |
