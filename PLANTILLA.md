@@ -37,6 +37,15 @@ Si el cuento enseña datos, tienen que ser **ciertos**. Mejor redondear ("más d
 - Descripción de personajes: la de `PERSONAJES.md`, siempre igual, para que se reconozcan de un cuento a otro.
 - Primero se genera una imagen con todos los personajes y después se usa como referencia para el resto.
 
+## Ahorrar hojas al imprimir
+
+Se imprime en casa y cada hoja cuenta. Al maquetar los cuentos nuevos:
+
+- **Juntar en una página lo que quepa.** Por ejemplo: la portadilla del cuento con el principio del capítulo 1, la moraleja con «Lo que aprendimos», o «Personajes» con «Otros personajes».
+- **Reducir la letra cuando haga falta** para que algo no se desborde a una página casi vacía (tablas de personajes, cuadros finales, un capítulo que se pasa por pocas líneas). El texto de los capítulos, nunca por debajo de 11,5 pt.
+- **Las imágenes, siempre enteras**: se pueden hacer más pequeñas, pero no recortarlas.
+- Antes de entregar el PDF, revisar que no haya páginas con solo unas líneas o un título suelto.
+
 ## Al terminar un cuento
 
 1. Añadirlo al índice de `README.md` y a las apariciones de `PERSONAJES.md` (de ahí salen las páginas «Personajes» y «Otros personajes» del final de cada cuento).
