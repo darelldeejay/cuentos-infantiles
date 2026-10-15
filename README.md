@@ -14,6 +14,7 @@ Los cuentos 1 a 4 se leen en unos 9–11 minutos y, desde el 5, en unos 15–18.
 | 4 | [El cohete de cartón](cuentos/04-el-cohete-de-carton/cuento.md) | El espacio | Nadie es demasiado pequeño para ayudar | ~9 min |
 | 5 | [Lo que guardaba la poza](cuentos/05-lo-que-guardaba-la-poza/cuento.md) | El mar y sus animales | La naturaleza no es una tienda de recuerdos: mira, aprende y déjala como estaba | ~15 min |
 | 6 | [El girasol de las dos](cuentos/06-el-girasol-de-las-dos/cuento.md) | Las plantas y decir la verdad | Decir la verdad cuesta un momento; callarla pesa todos los días | ~15 min |
+| 7 | [El concurso de los dinosaurios](cuentos/07-el-concurso-de-los-dinosaurios/cuento.md) | Los dinosaurios y saber perder | Ganar es bonito, pero saber perder es de campeonas | ~15 min |
 
 ## 🔤 Aprendo a leer (para Liliana)
 

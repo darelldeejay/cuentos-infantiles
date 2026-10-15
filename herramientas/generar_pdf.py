@@ -12,6 +12,7 @@ Necesita Chromium o Google Chrome. Si no lo encuentra, indica la ruta con CHROME
 """
 import glob
 import html
+import math
 import os
 import re
 import shutil
@@ -22,6 +23,9 @@ import tempfile
 import markdown
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# Desde este cuento se usa el formato compacto: portadilla junto al capítulo 1 y
+# moraleja junto a los personajes, para gastar menos hojas al imprimir.
+COMPACTO_DESDE = 7
 SALIDA = os.path.join(RAIZ, "libro", "cuentos-olivia-y-liliana.pdf")
 
 CSS = """
@@ -82,6 +86,35 @@ p { margin: 0 0 .3em; }
 .personajes th, .personajes td { text-align: left; vertical-align: top; padding: 2.5mm 3mm; border-bottom: 1px solid #e3d5bf; }
 .personajes th { background: #f6ecd9; font-family: Fredoka; font-weight: 600; }
 .personajes td:first-child { width: 22%; font-weight: 700; }
+
+/* Formato compacto (desde el cuento 07): menos hojas al imprimir. */
+.cabecera { text-align: center; margin: 0 0 4mm; padding-bottom: 3mm; border-bottom: 1px dashed #d8c7ad; }
+.cabecera .num { font-family: Fredoka; font-size: 11pt; color: #b0703f; letter-spacing: .1em; }
+.cabecera h1 { font-size: 24pt; color: #7a3b1d; margin: 1mm 0 1.5mm; }
+.cabecera .meta { font-size: 10pt; color: #6b5a48; }
+.capitulo.extenso.primero img { height: 70mm; }
+.capitulo.extenso.denso { font-size: 11.5pt; line-height: 1.32; }
+.capitulo.extenso.denso img { height: 76mm; }
+.capitulo.extenso.denso p { margin: 0 0 .18em; }
+.final { break-before: page; }
+.final .cierre, .final .personajes { break-before: auto; }
+.final .cierre blockquote { margin: 0 0 4mm; padding: 4mm 6mm; }
+.final .cierre blockquote h3 { font-size: 16pt; margin: 0 0 2mm; }
+.final .cierre blockquote p { font-size: 12pt; }
+.final .cierre h3 { font-size: 14pt; margin: 3mm 0 2mm; }
+.final .cierre table, .final .personajes table { font-size: 9.5pt; line-height: 1.25; margin-bottom: 2mm; }
+.final .cierre th, .final .cierre td, .final .personajes th, .final .personajes td { padding: 1mm 2mm; }
+.final .cierre p { font-size: 11.5pt; margin: 0 0 2mm; }
+.final .personajes { margin-top: 5mm; }
+.final .personajes h1 { font-size: 18pt; margin: 0 0 2mm; }
+.final .personajes h2 { font-size: 13pt; margin: 3mm 0 1.5mm; }
+.final .fichas { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2mm 4mm; }
+.final .ficha { border: 1px solid #e3d5bf; border-radius: 2mm; padding: 1.5mm 2.5mm; break-inside: avoid; }
+.final .ficha b { font-family: Fredoka; font-weight: 600; font-size: 11pt; color: #7a3b1d; }
+.final .ficha p { font-size: 8.5pt; line-height: 1.3; margin: .5mm 0 0; }
+.final .ficha .aspecto { color: #6b5a48; }
+.final .ficha.otro { border-style: dashed; }
+.final .ficha span { font-size: 8pt; color: #b0703f; margin-left: 2mm; }
 """
 
 
@@ -106,7 +139,7 @@ def leer_personajes():
     return fichas, apariciones
 
 
-def personajes_html(nombres, fichas):
+def personajes_html(nombres, fichas, compacto=False):
     """Páginas «Personajes» y «Otros personajes» del final de un cuento, solo con los que salen en él."""
     grupos = {}
     for nombre in nombres:
@@ -119,6 +152,18 @@ def personajes_html(nombres, fichas):
         cuerpo = "".join(f"<tr><td>{html.escape(n)}</td><td>{html.escape(q)}</td><td>{html.escape(c) or '—'}</td></tr>"
                          for n, q, c in filas)
         return f"<table><tr><th>Personaje</th><th>Quién es</th><th>Cómo es</th></tr>{cuerpo}</table>"
+
+    if compacto:
+        # Fichas pequeñas en tres columnas: caben en la misma hoja que la moraleja.
+        # Todos en la misma cuadrícula; los «otros personajes» van al final, con borde de puntos.
+        def ficha(n, q, c, otro):
+            return (f'<div class="ficha{" otro" if otro else ""}"><b>{html.escape(n)}</b>'
+                    + ('<span>otro personaje</span>' if otro else "")
+                    + f'<p>{html.escape(q)}</p>' + (f'<p class="aspecto">{html.escape(c)}</p>' if c else "") + "</div>")
+        tarjetas = [ficha(n, q, c, False) for g, filas in grupos.items() if g != "Otros personajes" for n, q, c in filas]
+        tarjetas += [ficha(n, q, c, True) for n, q, c in grupos.get("Otros personajes", [])]
+        titulo = "Personajes y otros personajes" if "Otros personajes" in grupos else "Personajes"
+        return f'<section class="personajes"><h1>{titulo}</h1><div class="fichas">{"".join(tarjetas)}</div></section>'
 
     partes = ["<h1>Personajes</h1>"]
     for grupo, filas in grupos.items():
@@ -145,19 +190,27 @@ def cuento_a_html(num, ruta, fichas, apariciones):
     capitulos = re.split(r"\n(?=## )", capitulos_txt.strip())
     cierre_txt = cierre_txt.replace("\n---\n", "\n")
 
-    partes = [
-        f'<section class="cuento-titulo"><div class="num">CUENTO {num}</div>'
-        f"<h1>{html.escape(titulo)}</h1><div class=\"meta\">{html.escape(meta)}</div></section>"
-    ]
-    for cap in capitulos:
+    compacto = num >= COMPACTO_DESDE
+    titulo_html = (f'<div class="num">CUENTO {num}</div>'
+                   f"<h1>{html.escape(titulo)}</h1><div class=\"meta\">{html.escape(meta)}</div>")
+    partes = [] if compacto else [f'<section class="cuento-titulo">{titulo_html}</section>']
+    for i, cap in enumerate(capitulos):
         # Capítulo largo: imagen más baja para que quepa en una sola página.
         # Capítulo extenso (cuentos desde el 05): letra más pequeña para que entre más texto por página.
         palabras = len(cap.split())
         clase = "capitulo extenso" if palabras > 200 else "capitulo largo" if palabras > 180 else "capitulo"
-        partes.append(f'<section class="{clase}">{md(cap)}</section>')
-    partes.append(f'<section class="cierre">{md(cierre_txt)}</section>')
-    if num in apariciones:
-        partes.append(personajes_html(apariciones[num], fichas))
+        # Capítulo con mucho diálogo (muchas líneas cortas): letra al mínimo (11,5 pt) para que no se desborde.
+        parrafos = [t for t in cap.split("\n\n")[1:] if t.strip() and not t.startswith("![")]
+        if "extenso" in clase and sum(math.ceil(len(t) / 95) for t in parrafos) >= 24:
+            clase += " denso"
+        cabecera = ""
+        if compacto and i == 0:
+            clase += " primero"
+            cabecera = f'<header class="cabecera">{titulo_html}</header>'
+        partes.append(f'<section class="{clase}">{cabecera}{md(cap)}</section>')
+    cierre = f'<section class="cierre">{md(cierre_txt)}</section>'
+    personajes = personajes_html(apariciones[num], fichas, compacto) if num in apariciones else ""
+    partes.append(f'<div class="final">{cierre}{personajes}</div>' if compacto else cierre + personajes)
 
     tema = re.search(r"🌍 Tema: ([^·\n]+)", meta)
     return titulo, (tema.group(1).strip() if tema else ""), "\n".join(partes), f"{carpeta}/imagenes"

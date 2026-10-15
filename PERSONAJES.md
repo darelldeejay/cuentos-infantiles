@@ -2,6 +2,8 @@
 
 El pelo de cada niña es el de verdad (descrito por su padre). La ropa es inventada y se mantiene siempre igual para que se reconozcan de un cuento a otro.
 
+**Gafas: solo las llevan Sofía B (azules) y Olaya (rosas).** Ninguna otra niña lleva gafas.
+
 Los cuentos 01 a 04 se ilustraron antes de tener estas descripciones, así que en ellos el pelo no coincide.
 
 ## Protagonistas
@@ -18,8 +20,8 @@ Los cuentos 01 a 04 se ilustraron antes de tener estas descripciones, así que e
 | **Matylda** | La mejor amiga de Olivia de toda la vida. | Pelo naranja (pelirroja), liso, ni muy largo ni muy corto. Diadema azul, sudadera morada, pecas. |
 | **Ana** | Amiga de Olivia. Le encanta explorar y lo apunta todo en su cuaderno. | Pelo castaño, liso, hasta los hombros. Peto vaquero sobre camiseta blanca de lunares azules. |
 | **Lucía** | Amiga del cole. Paciente y muy cuidadosa con las plantas. | Pelo negro y liso, siempre recogido en una coleta. Sudadera verde menta. |
-| **Olaya** | Amiga del cole. Sabe muchas cosas de animales y de la naturaleza. | Pelo rubio (amarillo), liso, ni muy largo ni muy corto. Gafas redondas rojas, rebeca amarilla mostaza sobre camisa blanca. |
-| **Sofía B** | Sofía Bernal. Amiga del cole. Siempre lleva una libreta para apuntarlo todo. | Pelo negro muy oscuro, liso, por los hombros y siempre en coleta. Camiseta de rayas naranjas y blancas. |
+| **Olaya** | Amiga del cole. Sabe muchas cosas de animales y de la naturaleza. | Pelo rubio (amarillo), liso, ni muy largo ni muy corto. Gafas redondas de color rosa. Rebeca amarilla mostaza sobre camisa blanca. |
+| **Sofía B** | Sofía Bernal. Amiga del cole. Siempre lleva una libreta para apuntarlo todo. | Piel morena. Pelo negro muy oscuro, liso, por los hombros y siempre en coleta. Gafas de color azul. Camiseta de rayas naranjas y blancas. |
 | **Sofía V** | Sofía Valentina. Amiga del cole. Muy graciosa, siempre tiene una broma preparada. | Pelo negro, un poco rizado, por los hombros. Chaqueta vaquera sobre camiseta roja. |
 | **Jana** | Amiga del cole. Cariñosa, cuida del hámster de la clase. | Pelo marrón claro, liso, un poco por encima de los hombros y siempre en coleta con un lazo blanco. Vestido turquesa. |
 | **Claudia** | Amiga de las clases de música. Toca el piano y tiene un oído finísimo. | Pelo rubio muy claro, liso y siempre suelto, casi por los hombros sin llegar. Chaqueta rosa. |
@@ -44,3 +46,4 @@ Los cuentos 01 a 04 se ilustraron antes de tener estas descripciones, así que e
 | 04 · El cohete de cartón | Olivia, Liliana, Matylda |
 | 05 · Lo que guardaba la poza | Olivia, Liliana, Matylda, Ana, Peluso, El pulpo de la poza |
 | 06 · El girasol de las dos | Olivia, Liliana, Lucía, Sofía B, Sofía V, Jana, Olaya, Seño Marta |
+| 07 · El concurso de los dinosaurios | Olivia, Liliana, Claudia, Sofía B, Olaya, Sofía V, Jana, Seño Marta |
