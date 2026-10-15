@@ -45,6 +45,7 @@ Se imprime en casa y cada hoja cuenta. Al maquetar los cuentos nuevos:
 - **Reducir la letra cuando haga falta** para que algo no se desborde a una página casi vacía (tablas de personajes, cuadros finales, un capítulo que se pasa por pocas líneas). El texto de los capítulos, nunca por debajo de 11,5 pt.
 - **Las imágenes, siempre enteras**: se pueden hacer más pequeñas, pero no recortarlas.
 - Antes de entregar el PDF, revisar que no haya páginas con solo unas líneas o un título suelto.
+- **Desde el cuento 07 el script lo hace solo** (formato compacto): el título del cuento va encima del capítulo 1, la moraleja y los personajes van en la misma hoja (personajes en fichas de tres columnas) y los capítulos con mucho diálogo bajan la letra a 11,5 pt. Un cuento de 6 capítulos ocupa 7 hojas, más la del índice.
 
 ## Al terminar un cuento
 
